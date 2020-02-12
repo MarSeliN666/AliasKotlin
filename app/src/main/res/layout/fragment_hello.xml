@@ -4,26 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Hello"
-    android:background="@color/colorPrimaryLight">
+    android:background="@drawable/background4"
+    tools:context=".Hello">
 
     <Button
-        android:id="@+id/btn"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnStartGame"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Button"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/btn_start_game_background"
+        android:focusable="auto"
+        android:text="@string/start_game"
+        android:fontFamily="@font/kelly_slab"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp"
+        android:text="@string/info"
+        android:fontFamily="@font/kelly_slab"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartGame"
+        app:layout_constraintVertical_bias="0.577" />
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HELLO"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/permanent_marker"
+        android:text="@string/alies_kotlin"
+        android:textColor="@android:color/white"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnStartGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/infoicon"
+        android:padding="10dp"
+        android:src="@drawable/ic_info_white"
+        app:layout_constraintBottom_toBottomOf="@+id/tvInfo"
+        app:layout_constraintEnd_toStartOf="@+id/tvInfo"
+        app:layout_constraintTop_toTopOf="@+id/tvInfo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="155dp"
+        android:layout_height="154dp"
+        android:src="@drawable/gray_kotlin_logo"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

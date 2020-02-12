@@ -1,15 +1,18 @@
 package com.example.alieskotlin
 
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.fragment_word_list_choosing.*
 
-class WordListChoosing : Fragment() {
+class ListChoosing : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,6 +26,10 @@ class WordListChoosing : Fragment() {
         moveToGame.setOnClickListener{
             findNavController().navigate(R.id.action_wordListChoosing_to_game)
         }
+
+        recyclerView_lists.layoutManager = LinearLayoutManager(context)
+        recyclerView_lists.adapter = ListsAdapter()
+
         super.onStart()
     }
 

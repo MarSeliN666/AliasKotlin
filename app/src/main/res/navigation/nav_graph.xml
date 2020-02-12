@@ -54,7 +54,7 @@
     </fragment>
     <fragment
         android:id="@+id/wordListChoosing"
-        android:name="com.example.alieskotlin.WordListChoosing"
+        android:name="com.example.alieskotlin.ListChoosing"
         android:label="fragment_word_list_choosing"
         tools:layout="@layout/fragment_word_list_choosing" >
         <action

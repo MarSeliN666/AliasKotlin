@@ -9,9 +9,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_game.*
 
-/**
- * A simple [Fragment] subclass.
- */
+
 class Game : Fragment() {
 
     override fun onCreateView(
@@ -24,7 +22,7 @@ class Game : Fragment() {
 
     override fun onStart() {
 
-        textView3.setOnClickListener {
+        moveToGameSettings.setOnClickListener {
             findNavController().navigate(R.id.teams)
         }
 

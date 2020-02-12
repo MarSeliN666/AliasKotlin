@@ -1,5 +1,6 @@
 package com.example.alieskotlin
 
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.Navigation
@@ -11,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Navigation.findNavController(this, R.id.nav_host_fragment)
     }
+
 
 }
 

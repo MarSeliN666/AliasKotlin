@@ -4,29 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameSettings"
-    android:background="@color/colorPrimaryLight">
+    android:background="@drawable/background3"
+    tools:context=".GameSettings">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="139dp"
-        android:layout_marginTop="356dp"
-        android:layout_marginEnd="139dp"
-        android:layout_marginBottom="356dp"
-        android:text="GAME_SETTINGS"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kelly_slab"
+        android:text="Game Settings"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/moveToWordListChoosing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="Button"
+        android:text="@string/word_lists"
+        android:fontFamily="@font/kelly_slab"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_start_game_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
