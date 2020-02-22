@@ -16,7 +16,7 @@ class TeamsAdapter : RecyclerView.Adapter<TeamsViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TeamsViewHolder {
         var layoutInflater = LayoutInflater.from(parent.context)
-        val teamNameField = layoutInflater.inflate(R.layout.card_lists, parent, false)
+        val teamNameField = layoutInflater.inflate(R.layout.card_teams, parent, false)
 
         return TeamsViewHolder(teamNameField)
     }
@@ -30,7 +30,5 @@ class TeamsAdapter : RecyclerView.Adapter<TeamsViewHolder>() {
 
 }
 
-class TeamsViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
-
-}
+class TeamsViewHolder(val view: View) : RecyclerView.ViewHolder(view)
 

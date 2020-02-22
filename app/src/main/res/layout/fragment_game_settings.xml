@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background3"
     tools:context=".GameSettings">
 
     <!-- TODO: Update blank fragment layout -->
@@ -15,7 +14,7 @@
         android:fontFamily="@font/kelly_slab"
         android:text="Game Settings"
         android:textStyle="bold"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorAccent"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,8 +26,8 @@
         android:layout_marginBottom="32dp"
         android:text="@string/word_lists"
         android:fontFamily="@font/kelly_slab"
-        android:textColor="@android:color/white"
-        android:background="@drawable/btn_start_game_background"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/btn_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

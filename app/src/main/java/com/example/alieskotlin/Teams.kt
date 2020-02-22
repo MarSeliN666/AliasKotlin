@@ -21,7 +21,7 @@ class Teams : Fragment() {
     }
 
     override fun onStart() {
-        moveToGameSettings.setOnClickListener {
+        tv_endGame.setOnClickListener {
             findNavController().navigate(R.id.action_teams_to_gameSettings)
         }
 

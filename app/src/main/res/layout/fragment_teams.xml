@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background3"
     tools:context=".Teams">
 
     <!-- TODO: Update blank fragment layout -->
@@ -16,7 +15,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/kelly_slab"
         android:text="Teams"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorAccent"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,21 +27,21 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/moveToGameSettings"
+        app:layout_constraintBottom_toTopOf="@+id/tv_endGame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.562" />
 
     <Button
-        android:id="@+id/moveToGameSettings"
+        android:id="@+id/tv_endGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:text="Game Settings"
         android:fontFamily="@font/kelly_slab"
-        android:textColor="@android:color/white"
-        android:background="@drawable/btn_start_game_background"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/btn_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
