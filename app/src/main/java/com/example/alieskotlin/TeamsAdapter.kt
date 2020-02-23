@@ -10,12 +10,10 @@ class TeamsAdapter : RecyclerView.Adapter<TeamsViewHolder>() {
 
     private val listTeams = listOf("FirstTeam", "Second Team", "Add New Team")
 
-    override fun getItemCount(): Int {
-        return listTeams.size
-    }
+    override fun getItemCount(): Int = listTeams.size
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TeamsViewHolder {
-        var layoutInflater = LayoutInflater.from(parent.context)
+        val layoutInflater = LayoutInflater.from(parent.context)
         val teamNameField = layoutInflater.inflate(R.layout.card_teams, parent, false)
 
         return TeamsViewHolder(teamNameField)

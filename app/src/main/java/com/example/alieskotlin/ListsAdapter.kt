@@ -10,9 +10,7 @@ class ListsAdapter : RecyclerView.Adapter<WordListsViewHolder>() {
 
     private val listTitles = listOf("Simple Words", "Harder Words", "Impossible Words")
 
-    override fun getItemCount(): Int {
-        return listTitles.size
-    }
+    override fun getItemCount(): Int = listTitles.size
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WordListsViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -26,10 +24,9 @@ class ListsAdapter : RecyclerView.Adapter<WordListsViewHolder>() {
         val listTitles = listTitles[position]
         holder.view.tv_listName.text = listTitles
 
+
     }
 }
 
 
-class WordListsViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
-
-}
+class WordListsViewHolder(val view: View) : RecyclerView.ViewHolder(view)
