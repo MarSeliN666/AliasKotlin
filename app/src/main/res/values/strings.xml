@@ -25,4 +25,13 @@
     <string name="tv_30sec">30sec</string>
     <string name="time_over">Time has run out!</string>
     <string name="listname">ListName</string>
+    <string name="game_settings">Game Settings</string>
+    <string name="choose_time">Choose Time</string>
+
+    <string-array name="time">
+        <item>30 sec</item>
+        <item>1 min</item>
+        <item>2 min</item>
+        <item>4 min</item>
+    </string-array>
 </resources>
