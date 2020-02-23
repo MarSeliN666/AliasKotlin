@@ -38,7 +38,9 @@ class Game : Fragment() {
 
     }
 
-    var countDownTimer = object : CountDownTimer(6000, 1000) {
+    private var countDownTimer = object : CountDownTimer(60000, 1000) {
+
+
         override fun onFinish() {
             tv_timer.text = getString(R.string.time_over)
         }

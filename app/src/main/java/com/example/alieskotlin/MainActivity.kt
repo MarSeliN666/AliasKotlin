@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
         Navigation.findNavController(this, R.id.nav_host_fragment)
     }
 
-
 }
 
 
