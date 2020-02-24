@@ -1,6 +1,8 @@
 package com.example.alieskotlin
 
 
+import android.content.res.AssetManager
+import android.graphics.Typeface
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -34,6 +36,7 @@ class GameSettings : Fragment() {
             context?.let { ArrayAdapter<String>(it, android.R.layout.simple_spinner_dropdown_item, timeChoose) }
 
         spinner_timeChoosing.adapter = arrayAdapter
+
 
         spinner_timeChoosing.onItemSelectedListener = object :
 

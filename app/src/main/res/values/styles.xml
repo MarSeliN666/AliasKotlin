@@ -18,8 +18,7 @@
     </style>
 
     <style name="SpinnerStyle" >
-        <item name="android:textSize" >24sp</item>
-        <item name="android:textStyle" >bold</item>
+        <item name="android:fontFamily" >@font/kelly_slab</item>
     </style>
 
 </resources>

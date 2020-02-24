@@ -7,7 +7,18 @@
     tools:context=".Game">
 
     <!-- TODO: Update blank fragment layout -->
+    <com.yuyakaido.android.cardstackview.CardStackView
+        android:id="@+id/card_word_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="13dp"
+        android:padding="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_timer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_round">
 
+    </com.yuyakaido.android.cardstackview.CardStackView>
     <TextView
         android:id="@+id/tv_game"
         android:layout_width="wrap_content"
@@ -36,55 +47,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_game" />
 
-    <TextView
-        android:id="@+id/tv_word"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/kelly_slab"
-        android:text="@string/word"
-        android:textColor="@color/colorAccent"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-
-    <Button
-        android:id="@+id/btn_true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/btn_background"
-        android:fontFamily="@font/kelly_slab"
-        android:text="@string/true_word"
-        android:textStyle="bold"
-        android:textColor="@color/colorAccent"
-        app:layout_constraintBottom_toTopOf="@+id/tv_endGame"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tv_game"
-        app:layout_constraintTop_toBottomOf="@+id/tv_word" />
-
-    <Button
-        android:id="@+id/btn_false"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/btn_background"
-        android:fontFamily="@font/kelly_slab"
-        android:text="@string/false_word"
-        android:textColor="@color/colorAccent"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tv_endGame"
-        app:layout_constraintEnd_toEndOf="@+id/tv_game"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_word" />
 
     <TextView
         android:id="@+id/tv_timer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/kelly_slab"
         android:text="@string/tv_30sec"
         android:textColor="@color/colorAccent"
@@ -92,8 +60,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tv_endGame"
         app:layout_constraintEnd_toEndOf="@+id/tv_endGame"
-        app:layout_constraintStart_toStartOf="@+id/tv_endGame"
-        app:layout_constraintTop_toBottomOf="@+id/btn_true" />
+        app:layout_constraintStart_toStartOf="@+id/tv_endGame" />
     <Button
         android:id="@+id/tv_endGame"
         android:layout_width="wrap_content"
