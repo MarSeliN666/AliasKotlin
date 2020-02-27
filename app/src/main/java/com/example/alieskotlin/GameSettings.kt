@@ -36,8 +36,6 @@ class GameSettings : Fragment() {
             context?.let { ArrayAdapter<String>(it, android.R.layout.simple_spinner_dropdown_item, timeChoose) }
 
         spinner_timeChoosing.adapter = arrayAdapter
-
-
         spinner_timeChoosing.onItemSelectedListener = object :
 
         AdapterView.OnItemSelectedListener{

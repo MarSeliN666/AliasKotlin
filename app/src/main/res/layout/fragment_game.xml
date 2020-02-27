@@ -26,22 +26,18 @@
 
     <TextView
         android:id="@+id/tv_game"
-        style="@style/DarkRubik"
-        android:layout_marginTop="48dp"
+        style="@style/LightRubik"
+        android:layout_marginTop="40dp"
         android:text="@string/game"
-        android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_teamName"
-        style="@style/DarkRubik"
+        style="@style/LightRubik"
         android:layout_marginTop="8dp"
         android:text="@string/teamname"
-        android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_game" />
@@ -49,13 +45,10 @@
 
     <TextView
         android:id="@+id/tv_timer"
-        style="@style/DarkRubik"
+        style="@style/LightRubik"
         android:layout_marginBottom="8dp"
-        android:fontFamily="@font/rubik"
         android:text="@string/tv_30sec"
-        android:textColor="@color/colorAccent"
         android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tv_endGame"
         app:layout_constraintEnd_toEndOf="@+id/tv_endGame"
         app:layout_constraintStart_toStartOf="@+id/tv_endGame" />
@@ -74,11 +67,8 @@
 
     <TextView
         android:id="@+id/tv_round"
-        style="@style/DarkRubik"
+        style="@style/LightRubik"
         android:text="Round-N"
-        android:textColor="@color/colorAccent"
-        android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/card_word_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

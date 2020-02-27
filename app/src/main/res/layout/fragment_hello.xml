@@ -1,65 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-    tools:context=".Hello"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    tools:context=".Hello">
 
     <Button
         android:id="@+id/btnStartGame"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
         android:layout_marginBottom="64dp"
         android:background="@drawable/btn_background"
         android:focusable="auto"
         android:fontFamily="@font/rubik"
         android:text="@string/start_game"
         android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
-        android:textSize="24sp"
         android:textColor="@color/colorAccent"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/textView" />
 
 
     <TextView
         android:id="@+id/tvInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/LightRubik"
+        android:layout_marginTop="8dp"
         android:clickable="true"
         android:focusable="true"
-        android:fontFamily="@font/rubik"
         android:padding="10dp"
         android:text="@string/info"
-        android:textColor="@color/colorPrimary"
         android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnStartGame"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintEnd_toEndOf="@+id/btnStartGame"
+        app:layout_constraintStart_toStartOf="@+id/btnStartGame"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartGame" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/rubik"
+        style="@style/LightRubik"
         android:text="@string/alies_kotlin"
-        android:textColor="@color/colorPrimary"
         android:textSize="60sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btnStartGame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -67,7 +56,7 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/infoicon"
         android:padding="10dp"
-        android:src="@drawable/ic_info_primary_dark"
+        android:src="@drawable/ic_info_white_24dp"
         app:layout_constraintBottom_toBottomOf="@+id/tvInfo"
         app:layout_constraintEnd_toStartOf="@+id/tvInfo"
         app:layout_constraintTop_toTopOf="@+id/tvInfo"
@@ -75,9 +64,10 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="155dp"
-        android:layout_height="154dp"
-        android:src="@drawable/gray_kotlin_logo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/kotlin_light"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

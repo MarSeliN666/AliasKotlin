@@ -4,19 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameSettings"
-    android:background="@drawable/gradient_background">
+    android:background="@drawable/gradient_background"
+    tools:context=".GameSettings">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="back"
+        android:padding="4dp"
+        android:src="@drawable/ic_back_white"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_GSTitile"
+        app:layout_constraintStart_toStartOf="@+id/card_view"
+        app:layout_constraintTop_toTopOf="@+id/tv_GSTitile" />
 
     <TextView
         android:id="@+id/tv_GSTitile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/LightRubik"
         android:layout_marginTop="48dp"
-        android:fontFamily="@font/rubik"
         android:text="@string/game_settings"
-        android:textColor="@color/colorAccent"
         android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,12 +31,13 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_margin="13dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimary"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="13dp"
+        android:background="#5E35B1"
         app:cardCornerRadius="12dp"
-        app:cardElevation="8dp"
+        app:cardElevation="4dp"
         app:contentPadding="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +63,6 @@
 
             <Spinner
                 android:id="@+id/spinner_timeChoosing"
-                style="@android:style/Widget.Holo.Spinner"
                 android:layout_width="120dp"
                 android:layout_height="35dp"
                 android:dropDownWidth="120dp"
