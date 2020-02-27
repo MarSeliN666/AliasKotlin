@@ -20,10 +20,10 @@ class Hello : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_hello, container, false)
-
     }
 
     override fun onStart() {
+
         btnStartGame.setOnClickListener {
             findNavController().navigate(R.id.action_hello_to_teams)
         }

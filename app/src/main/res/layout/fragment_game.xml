@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Game">
+    tools:context=".Game"
+    android:background="@drawable/gradient_background">
 
     <!-- TODO: Update blank fragment layout -->
     <com.yuyakaido.android.cardstackview.CardStackView
@@ -12,21 +13,22 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="13dp"
+        android:clipChildren="true"
+        android:clipToPadding="true"
         android:padding="13dp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_timer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_round">
+        app:layout_constraintTop_toTopOf="parent">
 
     </com.yuyakaido.android.cardstackview.CardStackView>
+
     <TextView
         android:id="@+id/tv_game"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/kelly_slab"
+        style="@style/DarkRubik"
+        android:layout_marginTop="48dp"
         android:text="@string/game"
-        android:textColor="@color/colorAccent"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,12 +37,9 @@
 
     <TextView
         android:id="@+id/tv_teamName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/kelly_slab"
+        style="@style/DarkRubik"
+        android:layout_marginTop="8dp"
         android:text="@string/teamname"
-        android:textColor="@color/colorAccent"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,10 +49,9 @@
 
     <TextView
         android:id="@+id/tv_timer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/DarkRubik"
         android:layout_marginBottom="8dp"
-        android:fontFamily="@font/kelly_slab"
+        android:fontFamily="@font/rubik"
         android:text="@string/tv_30sec"
         android:textColor="@color/colorAccent"
         android:textSize="24sp"
@@ -66,7 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/btn_background2"
-        android:fontFamily="@font/kelly_slab"
+        android:fontFamily="@font/rubik"
         android:padding="8dp"
         android:text="@string/end_game"
         android:textColor="@color/colorAccent"
@@ -76,16 +74,13 @@
 
     <TextView
         android:id="@+id/tv_round"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/kelly_slab"
+        style="@style/DarkRubik"
         android:text="Round-N"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/card_word_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_teamName" />
 

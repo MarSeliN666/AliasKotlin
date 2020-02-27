@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Teams">
+    tools:context=".Teams"
+    android:background="@drawable/gradient_background">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -12,8 +13,8 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/kelly_slab"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/rubik"
         android:text="Teams"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
@@ -38,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:text="Game Settings"
-        android:fontFamily="@font/kelly_slab"
+        android:fontFamily="@font/rubik"
         android:textColor="@color/colorAccent"
         android:background="@drawable/btn_background"
         app:layout_constraintBottom_toBottomOf="parent"

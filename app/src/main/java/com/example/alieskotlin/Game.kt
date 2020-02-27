@@ -21,7 +21,7 @@ import kotlinx.android.synthetic.main.fragment_game.*
 import java.util.ArrayList
 
 
-class Game : Fragment(), CardStackListener {
+class Game : Fragment(),  CardStackListener {
 
     private val cardStackView by lazy { view!!.findViewById<CardStackView>(R.id.card_word_view) }
     private val manager by lazy { CardStackLayoutManager(context, this) }
@@ -114,7 +114,7 @@ class Game : Fragment(), CardStackListener {
         manager.setVisibleCount(3)
         manager.setTranslationInterval(8.0f)
         manager.setScaleInterval(0.95f)
-        manager.setSwipeThreshold(0.3f)
+        manager.setSwipeThreshold(0.1f)
         manager.setMaxDegree(20.0f)
         manager.setDirections(Direction.HORIZONTAL)
         manager.setCanScrollHorizontal(true)
