@@ -7,33 +7,12 @@
     android:background="@drawable/gradient_background"
     tools:context=".GameSettings">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:contentDescription="back"
-        android:padding="4dp"
-        android:src="@drawable/ic_back_white"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_GSTitile"
-        app:layout_constraintStart_toStartOf="@+id/card_view"
-        app:layout_constraintTop_toTopOf="@+id/tv_GSTitile" />
-
-    <TextView
-        android:id="@+id/tv_GSTitile"
-        style="@style/LightRubik"
-        android:layout_marginTop="48dp"
-        android:text="@string/game_settings"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="13dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="13dp"
         android:layout_marginEnd="13dp"
         android:background="#5E35B1"
         app:cardCornerRadius="12dp"
@@ -41,7 +20,7 @@
         app:contentPadding="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_GSTitile">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -86,5 +65,48 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_GSTitile"
+            style="@style/LightRubik"
+            android:text="@string/game_settings"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="back"
+            android:padding="4dp"
+            android:src="@drawable/ic_arrow_back_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="back"
+            android:padding="4dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_dots_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
