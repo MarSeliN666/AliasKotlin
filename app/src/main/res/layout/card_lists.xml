@@ -24,7 +24,7 @@
             android:layout_marginStart="8dp"
             android:fontFamily="@font/rubik"
             android:text="@string/listname"
-            android:textColor="@android:color/black"
+            android:textColor="@color/colorAccent"
             android:textSize="24sp"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintStart_toEndOf="@+id/checkBoxList"
@@ -32,9 +32,11 @@
 
         <CheckBox
             android:id="@+id/checkBoxList"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:buttonTint="#000000"
             card_view:layout_constraintBottom_toBottomOf="@+id/tv_listName"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="@+id/tv_listName" />

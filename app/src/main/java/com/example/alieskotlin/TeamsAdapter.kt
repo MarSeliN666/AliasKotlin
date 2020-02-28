@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.card_teams.view.*
 
 class TeamsAdapter : RecyclerView.Adapter<TeamsViewHolder>() {
 
-    private val listTeams = listOf("FirstTeam", "Second Team", "Add New Team")
+    private val listTeams = listOf("First Team", "Second Team", "AddTeam")
 
     override fun getItemCount(): Int = listTeams.size
 

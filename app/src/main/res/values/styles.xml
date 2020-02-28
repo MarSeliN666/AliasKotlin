@@ -2,10 +2,10 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme"
-        parent="Theme.AppCompat.Light.NoActionBar">
+        parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimaryDark</item>
-        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
         <item name="android:windowTranslucentStatus">true</item>
@@ -15,7 +15,7 @@
     <style name="AlertDialogCustom" parent="@android:style/Theme.Material.Dialog">
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:subtitleTextColor">@color/colorAccent</item>
-        <item name="android:dialogMessage">@color/colorAccent</item>
+        <item name="android:colorForeground">@color/colorAccent</item>
         <item name="android:headerDividersEnabled">true</item>
         <item name="android:background">@color/colorPrimary</item>
     </style>

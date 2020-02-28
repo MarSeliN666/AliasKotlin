@@ -27,5 +27,8 @@
     <string name="listname">ListName</string>
     <string name="game_settings">Game Settings</string>
     <string name="choose_time">Choose Time</string>
+    <string name="this_is_image">this is image</string>
+    <string name="list_choosing">List Choosing</string>
+    <string name="todo">TODO</string>
 
 </resources>

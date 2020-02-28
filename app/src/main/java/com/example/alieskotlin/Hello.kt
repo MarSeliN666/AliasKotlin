@@ -27,7 +27,7 @@ class Hello : Fragment() {
         btnStartGame.setOnClickListener {
             findNavController().navigate(R.id.action_hello_to_teams)
         }
-        tvInfo.setOnClickListener {
+        groupInfo.setOnClickListener {
             dialogBuilder()
 
         }
