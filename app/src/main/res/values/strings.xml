@@ -30,5 +30,7 @@
     <string name="this_is_image">this is image</string>
     <string name="list_choosing">List Choosing</string>
     <string name="todo">TODO</string>
+    <string name="words_to_win">Words To Win</string>
+    <string name="round_n">Round-N</string>
 
 </resources>

@@ -8,7 +8,6 @@
     android:background="@drawable/background_gradient"
     android:paddingTop="24dp">
 
-    <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/looks_like_an_app_bar"
         android:layout_width="match_parent"
@@ -32,7 +31,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginStart="8dp"
-            android:contentDescription="back"
+            android:contentDescription="@string/this_is_image"
             android:padding="4dp"
             android:src="@drawable/ic_arrow_back_light"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -44,7 +43,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginEnd="8dp"
-            android:contentDescription="back"
+            android:contentDescription="@string/this_is_image"
             android:padding="4dp"
             android:src="@drawable/ic_night_mode_light"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -64,9 +63,7 @@
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </com.yuyakaido.android.cardstackview.CardStackView>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_teamName"
@@ -103,7 +100,7 @@
     <TextView
         android:id="@+id/tv_round"
         style="@style/LightRubik"
-        android:text="Round-N"
+        android:text="@string/round_n"
         app:layout_constraintBottom_toTopOf="@+id/card_word_view"
         app:layout_constraintEnd_toEndOf="@+id/tv_teamName"
         app:layout_constraintStart_toStartOf="@+id/tv_teamName"

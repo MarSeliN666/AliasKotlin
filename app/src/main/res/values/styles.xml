@@ -20,15 +20,6 @@
         <item name="android:background">@color/colorPrimary</item>
     </style>
 
-    <style name="SpinnerStyle" >
-        <item name="android:fontFamily" >@font/rubik</item>
-        <item name="android:textColor" >@color/colorAccent</item>
-        <item name="android:title" >@color/colorAccent</item>
-        <item name="android:backgroundTint" >@color/colorPrimary</item>
-
-
-    </style>
-
     <style name="DarkRubik">
         <item name="android:fontFamily">@font/rubik</item>
         <item name="android:layout_width">wrap_content</item>

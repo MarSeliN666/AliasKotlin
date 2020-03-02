@@ -1,4 +1,4 @@
-package com.example.alieskotlin.WordManagment
+package com.example.alieskotlin.wordManagement
 
 import androidx.recyclerview.widget.DiffUtil
 

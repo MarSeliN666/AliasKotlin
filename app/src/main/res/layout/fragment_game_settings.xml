@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_gradient"
-    tools:context=".GameSettings"
-    android:paddingTop="24dp">
+    android:paddingTop="24dp"
+    tools:context=".GameSettings">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/looks_like_an_app_bar"
@@ -60,7 +60,7 @@
         android:layout_marginStart="13dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="13dp"
-        app:cardBackgroundColor="#FFFFFF"
+        app:cardBackgroundColor="@color/colorPrimary"
         app:cardCornerRadius="12dp"
         app:cardElevation="8dp"
         app:contentPadding="4dp"
@@ -70,14 +70,14 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="16dp">
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/tv_listName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
                 android:fontFamily="@font/rubik"
                 android:text="@string/choose_time"
                 android:textColor="@android:color/black"
@@ -88,13 +88,14 @@
 
             <Spinner
                 android:id="@+id/spinner_timeChoosing"
-                android:layout_width="120dp"
-                android:layout_height="35dp"
-                android:dropDownWidth="120dp"
-                android:theme="@style/SpinnerStyle"
-                app:layout_constraintBottom_toBottomOf="@+id/tv_listName"
+                android:layout_width="164dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#000000"
+                android:dropDownWidth="130dp"
+                android:popupBackground="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/tv_listName" />
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
@@ -111,5 +112,51 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_WordsToWin"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="13dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:contentPadding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_ChooseTime">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_WordsToWin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/rubik"
+                android:text="@string/words_to_win"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinner_wordsNumberChoosing"
+                android:layout_width="164dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#000000"
+                android:dropDownWidth="130dp"
+                android:popupBackground="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.alieskotlin.adapters.TeamsAdapter
 import kotlinx.android.synthetic.main.fragment_teams.*
 
 class Teams : Fragment() {
@@ -26,7 +27,8 @@ class Teams : Fragment() {
         }
 
         recyclerView_teams.layoutManager = LinearLayoutManager(context)
-        recyclerView_teams.adapter = TeamsAdapter()
+        recyclerView_teams.adapter =
+            TeamsAdapter()
 
         super.onStart()
     }

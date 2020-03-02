@@ -1,4 +1,4 @@
-package com.example.alieskotlin.WordManagment
+package com.example.alieskotlin.wordManagement
 
 import android.view.LayoutInflater
 import android.view.View

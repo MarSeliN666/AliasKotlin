@@ -13,20 +13,19 @@ import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.DiffUtil
-import com.example.alieskotlin.WordManagment.CardWordAdapter
-import com.example.alieskotlin.WordManagment.Word
-import com.example.alieskotlin.WordManagment.WordDiffCallback
+import com.example.alieskotlin.wordManagement.CardWordAdapter
+import com.example.alieskotlin.wordManagement.Word
+import com.example.alieskotlin.wordManagement.WordDiffCallback
 import com.yuyakaido.android.cardstackview.*
 import kotlinx.android.synthetic.main.fragment_game.*
 import java.util.ArrayList
 
 
-class Game : Fragment(),  CardStackListener {
+class Game : Fragment(), CardStackListener {
 
     private val cardStackView by lazy { view!!.findViewById<CardStackView>(R.id.card_word_view) }
     private val manager by lazy { CardStackLayoutManager(context, this) }
     private val adapter by lazy { CardWordAdapter(createWordsList()) }
-
 
 
     override fun onCreateView(
@@ -36,6 +35,7 @@ class Game : Fragment(),  CardStackListener {
         return inflater.inflate(R.layout.fragment_game, container, false)
 
     }
+
 
     override fun onStart() {
         super.onStart()
@@ -50,7 +50,10 @@ class Game : Fragment(),  CardStackListener {
 
     }
 
-    private var countDownTimer = object : CountDownTimer(60000, 1000) {
+    private var countDownTimer = object : CountDownTimer(
+        selectedTime,
+        1000
+    ) {
 
 
         override fun onFinish() {
